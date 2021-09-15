@@ -14,6 +14,9 @@ public abstract class BeerOrderLineMapperDecorator implements BeerOrderLineMappe
     private BeerService beerService;
     private BeerOrderLineMapper mapper;
 
+    public BeerOrderLineMapperDecorator() {
+    }
+
     @Autowired
     public BeerOrderLineMapperDecorator(BeerService beerService) {
         this.beerService = beerService;
